@@ -1,0 +1,90 @@
+/* ----- Page Grid -------------*/
+/*body {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+    
+}*/
+
+body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    
+}
+
+/*
+.o-header, .o-aside, .o-main, .o-footer {
+    background: #b0afe0;
+}*/
+
+.o-header {
+    grid-area: header;
+}
+.o-aside {
+    grid-area: aside;
+}
+.o-main {
+    grid-area: main;
+}
+.o-footer {
+    grid-area: footer;
+}
+
+/* ----- Flex Box Header -------------*/
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nombre{
+    align-self:flex-start;
+    width: 50%;
+}
+
+.divnav{
+    align-self: flex-end;
+}
+
+/* ----- Panel Navegacion -------------*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color:lightgoldenrodyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color:  #bb7b04;}
+  
+  ul.topnav li a.active {background-color: #ac7105;}
+  
+  ul.topnav li.right {float: right;}
+
+ 
+  #acerca{
+      display: flex;
+      flex-direction: row;
+  }
+
