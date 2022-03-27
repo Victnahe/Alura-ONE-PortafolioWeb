@@ -82,9 +82,4 @@ ul.topnav {
   
   ul.topnav li.right {float: right;}
 
- 
-  #acerca{
-      display: flex;
-      flex-direction: row;
-  }
 
